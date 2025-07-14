@@ -1,0 +1,173 @@
+/* Document Template Editor Styles */
+
+/* TipTap Editor Styles */
+.ProseMirror {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.ProseMirror p {
+  margin: 1em 0;
+}
+
+.ProseMirror h1, .ProseMirror h2, .ProseMirror h3, .ProseMirror h4, .ProseMirror h5, .ProseMirror h6 {
+  margin: 1.5em 0 0.5em 0;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.ProseMirror h1 { font-size: 2em; }
+.ProseMirror h2 { font-size: 1.75em; }
+.ProseMirror h3 { font-size: 1.5em; }
+.ProseMirror h4 { font-size: 1.25em; }
+.ProseMirror h5 { font-size: 1.1em; }
+.ProseMirror h6 { font-size: 1em; }
+
+.ProseMirror ul, .ProseMirror ol {
+  margin: 1em 0;
+  padding-left: 2em;
+}
+
+.ProseMirror li {
+  margin: 0.5em 0;
+}
+
+.ProseMirror blockquote {
+  border-left: 4px solid #e5e7eb;
+  padding-left: 1em;
+  margin: 1em 0;
+  font-style: italic;
+  color: #6b7280;
+}
+
+.ProseMirror hr {
+  border: none;
+  border-top: 2px solid #e5e7eb;
+  margin: 2em 0;
+}
+
+.ProseMirror table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.ProseMirror th, .ProseMirror td {
+  border: 1px solid #d1d5db;
+  padding: 0.5em;
+  text-align: left;
+}
+
+.ProseMirror th {
+  background-color: #f9fafb;
+  font-weight: bold;
+}
+
+/* Two Column Block Styles */
+.ProseMirror div[data-type="two-column-block"] {
+  border: 2px dashed #e5e7eb;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  background-color: #f9fafb;
+}
+
+.ProseMirror div[data-type="two-column-block"]:hover {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+}
+
+/* Three Column Block Styles */
+.ProseMirror div[data-type="three-column-block"] {
+  border: 2px dashed #e5e7eb;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  background-color: #f9fafb;
+}
+
+.ProseMirror div[data-type="three-column-block"]:hover {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+}
+
+/* Header Block Styles */
+.ProseMirror header[data-type="header-block"] {
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+/* Footer Block Styles */
+.ProseMirror footer[data-type="footer-block"] {
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+/* Address Block Styles */
+.ProseMirror .address-block {
+  transition: all 0.2s ease;
+}
+
+.ProseMirror .address-block:hover {
+  background-color: #dbeafe;
+  border-left-color: #2563eb;
+}
+
+/* Template Variable Styles */
+.ProseMirror span[data-type="template-variable"] {
+  transition: all 0.2s ease;
+}
+
+.ProseMirror span[data-type="template-variable"]:hover {
+  background-color: #dbeafe;
+  transform: scale(1.05);
+}
+
+/* Drag and drop visual feedback */
+.drag-over {
+  background-color: #eff6ff !important;
+  border-color: #3b82f6 !important;
+}
+
+.drag-placeholder {
+  background-color: #e0e7ff;
+  border: 2px dashed #6366f1;
+  border-radius: 4px;
+  min-height: 40px;
+  margin: 0.5em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6366f1;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Block sidebar animations */
+.block-item {
+  transition: all 0.2s ease;
+}
+
+.block-item:hover {
+  transform: translateX(4px);
+}
+
+.block-item:active {
+  transform: scale(0.98);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ProseMirror div[data-type="two-column-block"] .flex {
+    flex-direction: column;
+  }
+  
+  .ProseMirror div[data-type="three-column-block"] .flex {
+    flex-direction: column;
+  }
+}
